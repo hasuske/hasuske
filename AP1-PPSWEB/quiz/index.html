@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Quiz de História da Tecnologia</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quiz" style="display: none;">
+            <h1 class="text-center">Quiz de História da Tecnologia</h1>
+            <div class="score text-center" id="score-container" style="display: none;">Pontuação: <span id="score">0</span></div>
+            <div class="question">
+                <h2 id="question-number" class="text-center"></h2>
+                <p id="question-text" class="text-center"></p>
+                <img id="question-image" src="" alt="Imagem da pergunta" class="img-fluid">
+            </div>
+            <div class="options text-center" id="options">
+                <!-- As alternativas serão adicionadas aqui dinamicamente -->
+            </div>
+            
+            <!-- <button id="next-button" class="btn btn-primary" onclick="nextQuestion()">Próxima Questão</button> -->
+        </div>
+        <div class="result text-center" style="display: none;">
+            <h1 id="congratulations" class="animated">Parabéns!</h1>
+            <p>Sua pontuação: <span id="final-score">0</span></p>
+            <button class="btn btn-primary" onclick="restartQuiz()">Reiniciar Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
